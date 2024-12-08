@@ -246,6 +246,8 @@ p{
 
     margin-top: 2rem;
     /* margin-bottom:2rem ; */
+
+    box-shadow: 0 0 10px lightgray;
 }
 
 @media screen and (max-width:800px) {
@@ -266,7 +268,7 @@ p{
 .topservices{
     width: 33.3%;
     min-height: 100%;
-    box-shadow: 0 0 5px gray;
+    /* box-shadow: 0 0 5px gray; */
 
     display: flex;
     flex-direction: column;
@@ -274,6 +276,12 @@ p{
     align-items: center;
 
     padding: 1rem 2rem;
+
+    border-top: solid lightgray 0.1rem;
+}
+
+.topservices:first-child{
+    border-top: none;
 }
 
 .topservices>h4{
