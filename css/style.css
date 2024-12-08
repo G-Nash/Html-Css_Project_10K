@@ -672,9 +672,17 @@ p{
 
 @media screen and (max-width:800px) {
     .quote_form{
-        width: 90% !important;
+        padding: 0.5rem 2rem;
+        width: 80% !important;
     }
 
+    .quote_form > h1{
+        margin-bottom: 1rem;
+    }
+
+    .quote_form > textarea{
+        margin-bottom: 0.5rem;
+    }
     .quote_form > input, .quote_form > textarea{
         width: 100%;
     }
