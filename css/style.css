@@ -506,7 +506,7 @@ p{
 .whyus_div{
     box-shadow: 0 0 10px lightgray;
     height: 225px;
-    width: 225px;
+    width: 275px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -523,5 +523,4 @@ p{
     .whyus_text, .whyus_div, .whyus_divs{
         width: 100%;
     }
-
 }
