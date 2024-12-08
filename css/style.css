@@ -4,6 +4,10 @@ html, body{
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 :root{
     --dark-font:hsl(120, 100%, 12%);
 }
@@ -21,6 +25,10 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     /* background-color: black; */
     /* background-color: lightgreen; */
+}
+
+p{
+    text-align: justify;
 }
 
 .topContact{
@@ -381,7 +389,7 @@ body{
 .wemake{
     font-weight: bolder;
     font-size: 4rem;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .btn{
@@ -445,4 +453,75 @@ body{
         background-position: center;
         background-size: cover;
     }
+}
+
+
+.whyus{
+    margin-top: 2rem;
+    /* border: solid red; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whyus_text > h4{
+    color: green;
+}
+
+.whyus_text > h1{
+    color: var(--dark-font);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.whyus_text > .btn{
+    margin-top: 2rem;
+}
+
+.whyus_text{
+    width: 50%;
+}
+
+.whyus_divs{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whyus_div > h4{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.whyus_div{
+    box-shadow: 0 0 10px lightgray;
+    height: 225px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:800px) {
+    .whyus{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .whyus_text, .whyus_div, .whyus_divs{
+        width: 100%;
+    }
+
 }
