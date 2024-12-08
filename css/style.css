@@ -237,7 +237,7 @@ body{
     /* z-index: 5; */
 
     margin-top: 2rem;
-    margin-bottom:2rem ;
+    /* margin-bottom:2rem ; */
 }
 
 @media screen and (max-width:800px) {
@@ -246,6 +246,7 @@ body{
         width: 80%;
         flex-wrap: wrap;
         /* flex-direction: column; */
+        margin-bottom: 2rem;
     }
 
     .topservices{
@@ -286,6 +287,8 @@ body{
     justify-content: space-evenly;
 
     color: var(--dark-font);
+
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width:800px){
@@ -390,4 +393,16 @@ body{
 
 .about_exp>.btn{
     margin-top: 10%;
+}
+
+.numbers{
+    width: 100vw;
+    min-height: 30vh;
+
+    background-image: url();
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
