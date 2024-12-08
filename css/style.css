@@ -262,6 +262,8 @@ p{
     .topservices{
         display: flex;
         width: 350px !important;
+        border-top: solid lightgray 0.1rem;
+        border-left: none !important;
     }
 }
 
@@ -276,12 +278,12 @@ p{
     align-items: center;
 
     padding: 1rem 2rem;
-
-    border-top: solid lightgray 0.1rem;
+    border-left: solid lightgray 0.1rem;
 }
 
 .topservices:first-child{
     border-top: none;
+    border-left: none;
 }
 
 .topservices>h4{
@@ -342,7 +344,7 @@ p{
     }
 
     .about_img_img{
-        height: auto;
+        /* height: auto; */
         width: 95%;
     }
 
