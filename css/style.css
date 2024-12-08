@@ -678,6 +678,7 @@ p{
 
     .quote_form > h1{
         margin-bottom: 1rem;
+        font-size: 2rem;
     }
 
     .quote_form > textarea{
@@ -685,8 +686,10 @@ p{
     }
     .quote_form > input, .quote_form > textarea{
         width: 100%;
+        font-size: small;
     }
     .quote_form > .btn{
-        width: 40%;
+        width: 30%;
+        font-size: small;
     }
 }
