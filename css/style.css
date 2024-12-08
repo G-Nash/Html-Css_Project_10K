@@ -678,7 +678,7 @@ p{
     .quote_form{
         padding: 1rem 2rem;
         width: 80% !important;
-        height: max-content !important;
+        min-height: max-content !important;
     }
 
     .quote_form > h1{
