@@ -8,6 +8,10 @@ html, body{
     --dark-font:hsl(120, 100%, 12%);
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 p{
     margin: 0;
     padding: 0;
@@ -94,6 +98,8 @@ body{
     box-sizing: border-box;
     position: sticky;
     top: 0;
+
+    z-index: 9;
 }
 
 .headerTitle{
@@ -168,4 +174,37 @@ body{
     }
 }
 
+
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(15, 66, 41, .6);
+    z-index: 1;
+}
+
+.btn{
+    background-color: green;
+    border: green;
+}
+
+@media (max-width: 800px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
