@@ -695,5 +695,7 @@ p{
     .quote_form > .btn{
         width: 30%;
         font-size: small;
+        margin-bottom: 0;
     }
+
 }
