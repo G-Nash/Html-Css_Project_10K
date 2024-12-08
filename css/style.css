@@ -671,6 +671,10 @@ p{
 }
 
 @media screen and (max-width:800px) {
+    .quote{
+        background-attachment: scroll;
+    }
+
     .quote_form{
         padding: 0.5rem 2rem;
         width: 80% !important;
