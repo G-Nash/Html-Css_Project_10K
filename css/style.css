@@ -8,6 +8,10 @@ html, body{
     --dark-font:hsl(120, 100%, 12%);
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 p{
     margin: 0;
     padding: 0;
@@ -94,6 +98,7 @@ body{
     box-sizing: border-box;
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 
 .headerTitle{
@@ -167,5 +172,3 @@ body{
         margin-left: 1rem;
     }
 }
-
-
