@@ -442,7 +442,7 @@ p{
     height: 100%;
     width: 100%;
     background-color: var(--dark-font);
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .numbers > *{
@@ -553,7 +553,7 @@ p{
     align-items: center;
 }
 
-.services_text>p{
+.services_text>h4{
     color: green;
 }
 
@@ -601,4 +601,84 @@ p{
 .services_div > h4{
     color: var(--dark-font);
     margin: 1rem;
+}
+
+.quote{
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("../img/carousel-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote::before{
+    content: " ";
+    background-color: var(--dark-font);
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.quote_form{
+    position: relative;
+    min-height: 70%;
+    width: 50%;
+    margin: auto;
+
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.quote_form > h1{
+    color: var(--dark-font);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.quote_form > input, .quote_form > textarea{
+    color: var(--dark-font);
+    background-color: hsl(120, 100%, 90%);
+    border: none;
+    border-radius: 5px;
+
+    width: 45%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quote_form > textarea{
+    width: 91%;
+}
+
+.quote_form > .btn{
+    padding: 1rem;
+    width: 15%;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:800px) {
+    .quote_form{
+        width: 90% !important;
+    }
+
+    .quote_form > input, .quote_form > textarea{
+        width: 100%;
+    }
+    .quote_form > .btn{
+        width: 40%;
+    }
 }
