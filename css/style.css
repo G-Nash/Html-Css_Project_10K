@@ -188,6 +188,7 @@ p {
     width: auto;
     /* border: red solid; */
     padding: 1rem;
+    position: relative;
 
     /* display: flex; */
 }
