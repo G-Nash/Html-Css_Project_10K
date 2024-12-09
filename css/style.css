@@ -46,7 +46,7 @@ p {
     align-items: center;
     color: white;
 
-    animation-name: slide-yy;
+    animation-name: slide-xr;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
 
@@ -129,7 +129,7 @@ p {
     box-shadow: 0 0 5px gray;
 
 
-    animation-name: slide-yy;
+    animation-name: slide-xl;
     animation-duration: 0.5s;
     /* animation-delay: 0.1s; */
     animation-timing-function: ease-in;
