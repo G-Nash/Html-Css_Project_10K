@@ -550,6 +550,7 @@ p {
 .services {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     width: 80%;
     min-height: 100vh;
@@ -580,6 +581,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    /* min-height: 100vh; */
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -758,4 +760,91 @@ p {
 
 #project6{
     background-image: url("../img/service-6.jpg");
+}
+
+#team1{
+    background-image: url("../img/team-1.jpg");
+}
+
+#team2{
+    background-image: url("../img/team-2.jpg");
+}
+
+#team3{
+    background-image: url("../img/team-3.jpg");
+}
+
+#team1, #team2, #team3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customer{
+    min-height: 60vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content:space-between;
+    align-items:center;
+    gap: 2rem;
+}
+
+.testimony{
+    width: 40%;
+}
+
+.testimony > h5{
+    color: green;
+    font-weight: bold;
+}
+
+.testimony > h1{
+    color: var(--dark-font);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.testimony > .btn{
+    margin-top:2rem;
+}
+
+.testimonial{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial > img{
+    height: 100px;
+    width: 100px;
+}
+
+.testimonial > h3{
+    color: var(--dark-font);
+    font-weight: bolder;
+    margin-top: -20px;
+}
+
+.testimonial > p{
+    margin-top: -35px;
+}
+
+@media screen and (max-width:800px) {
+    .customer{
+        flex-direction: column !important;
+    }
+
+    .testimony{
+        width: 80%;
+    }
+
+    .testimonial{
+        width: 80%;
+    }
 }
