@@ -620,7 +620,7 @@ p {
     animation-name: slide-y;
     animation-duration: 1s;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 40%;
 }
 
 .whyus_text>h4 {
@@ -644,7 +644,7 @@ p {
     animation-name: slide-xl;
     animation-duration: 1s;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 40%;
 }
 
 .whyus_divs {
@@ -658,7 +658,7 @@ p {
     animation-name: slide-xr;
     animation-duration: 1s;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 40%;
 }
 
 .whyus_div>h4 {
@@ -701,6 +701,13 @@ p {
     min-height: 100vh;
     margin: auto;
     margin-top: 2rem;
+
+
+
+    animation-name: slide-y;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .services_text {
@@ -733,6 +740,8 @@ p {
 
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    position: relative;
 }
 
 @media screen and (max-width:800px) {
@@ -751,12 +760,38 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     height: 400px;
     width: 350px;
 
     padding: 1rem;
     border-radius: 5px !important;
+
+    animation-name: slide-y;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.services_div:hover{
+    /* background-image: url(../img/service-1.jpg); */
+    background-color: lightgray;
+    background-position: center;
+    background-size: cover;
+    transform:scale(1.1);
+    transition: transform ease-in-out 0.3s;
+    /* background-color: var(--dark-font); */
+    /* backdrop-filter: blur(90%); */
+}
+
+.services_div:hover >img{
+    background-color: rgb(226, 255, 226);
+    border-radius: 50%;
+}
+
+.services_div > *{
+    position: relative;
 }
 
 .services_div>img {
@@ -883,6 +918,12 @@ p {
     margin-top: 2rem !important;
 
     text-align: center;
+
+
+    animation-name: slide-y;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .project_text > h4{
@@ -919,6 +960,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+
+    animation-name: slide-xr;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .project, #project1{
@@ -933,6 +981,7 @@ p {
 .project > h4{
     color: white;
     position: relative;
+    font-weight: bolder;
 }
 
 .project::before{
@@ -944,6 +993,13 @@ p {
     opacity: 0.6;
 
     border-radius: 5px;
+}
+
+.project:hover{
+    background-position: center;
+    background-size: cover;
+    transform:scale(1.1);
+    transition: transform ease-in-out 0.3s;
 }
 
 #project2{
