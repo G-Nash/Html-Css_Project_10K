@@ -844,6 +844,12 @@ p {
 
     border-radius: 5px;
     padding: 2rem;
+
+
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .quote_form>h1 {
