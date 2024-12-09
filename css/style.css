@@ -45,6 +45,11 @@ p {
     justify-content: space-between;
     align-items: center;
     color: white;
+
+    animation-name: slide-yy;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+
 }
 
 .topContactLeft,
@@ -122,6 +127,13 @@ p {
     z-index: 9;
 
     box-shadow: 0 0 5px gray;
+
+
+    animation-name: slide-yy;
+    animation-duration: 0.5s;
+    /* animation-delay: 0.1s; */
+    animation-timing-function: ease-in;
+
 }
 
 
@@ -274,6 +286,10 @@ p {
 
 .carousel {
     z-index: 1;
+
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 
@@ -451,6 +467,11 @@ p {
     /* min-width: 30%; */
     /* max-height: 80%; */
     margin: auto;
+
+    animation-name: slide-xl;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .about_img_img {
@@ -464,6 +485,11 @@ p {
 
 .about_exp {
     flex-grow: 1;
+
+    animation-name: slide-y;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .about_exp>p,
@@ -476,6 +502,12 @@ p {
     display: flex;
     flex-direction: column;
     gap: 9rem;
+
+
+    animation-name: slide-xr;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .about_awards>div {
@@ -546,6 +578,14 @@ p {
     z-index: 3;
 }
 
+.number{
+
+    animation-name: slide-xr;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
 .number>h2 {
     font-weight: bold;
     font-size: 3rem;
@@ -576,6 +616,11 @@ p {
 
     align-items: center;
     justify-content: space-evenly;
+
+    animation-name: slide-y;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 .whyus_text>h4 {
@@ -594,6 +639,12 @@ p {
 
 .whyus_text {
     width: 50%;
+
+
+    animation-name: slide-xl;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 .whyus_divs {
@@ -603,6 +654,11 @@ p {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    animation-name: slide-xr;
+    animation-duration: 1s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 .whyus_div>h4 {
@@ -1121,5 +1177,41 @@ p {
     to{
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@keyframes slide-yy {
+    from{
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-xl {
+    from{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-xr {
+    from{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
