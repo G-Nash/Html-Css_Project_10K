@@ -551,6 +551,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     width: 80%;
     min-height: 100vh;
@@ -581,13 +582,20 @@ p {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* min-height: 100vh; */
-    justify-content: center;
+    min-height: 100vh;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width:800px) {
+    .services_divs{
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .services_div{
@@ -604,7 +612,7 @@ p {
     width: 350px;
 
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 .services_div>img {
@@ -626,6 +634,9 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem !important;
 
     position: relative;
     display: flex;
@@ -719,6 +730,53 @@ p {
 
 }
 
+.projects{
+    width: 80%;
+    min-height: 100vh;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem !important;
+
+    text-align: center;
+}
+
+.project_text > h4{
+    color: green;
+}
+
+.project_text > h1{
+    color: var(--dark-font);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.projects_divs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:800px) {
+    .projects_divs{
+        justify-content: center;
+    }
+}
+
+.projects_div{
+    width: 350px;
+    height: 400px;
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project, #project1{
     background-image: url("../img/service-1.jpg");
     background-position: center;
@@ -740,6 +798,8 @@ p {
     position: absolute;
     background-color: var(--dark-font);
     opacity: 0.6;
+
+    border-radius: 5px;
 }
 
 #project2{
@@ -762,15 +822,73 @@ p {
     background-image: url("../img/service-6.jpg");
 }
 
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+
+    width: 80%;
+    min-height: 100vh;
+
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .team_divs{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #team1, #team2, #team3{    
+        flex-wrap: wrap;
+
+        flex-direction: column;
+    }
+}
+
+.team_text >h4{
+    color: green;
+}
+
+.team_text > h1{
+    color: var(--dark-font);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.team_divs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team_div{
+    border-radius: 5px;
+}
+
 #team1{
+    width: 350px;
+    height: 400px;
     background-image: url("../img/team-1.jpg");
 }
 
 #team2{
+    width: 350px;
+    height: 400px;
     background-image: url("../img/team-2.jpg");
 }
 
 #team3{
+    width: 350px;
+    height: 400px;
     background-image: url("../img/team-3.jpg");
 }
 
@@ -778,6 +896,8 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    flex-wrap: wrap;
 }
 
 .customer{
@@ -785,11 +905,13 @@ p {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    /* margin-top: 2rem; */
+    margin-bottom: 4rem;
 
     display: flex;
     /* flex-wrap: wrap; */
     justify-content:space-between;
-    align-items:center;
+    align-items:center !important;
     gap: 2rem;
 }
 
@@ -823,6 +945,7 @@ p {
 .testimonial > img{
     height: 100px;
     width: 100px;
+    border-radius: 5px;
 }
 
 .testimonial > h3{
@@ -838,7 +961,8 @@ p {
 @media screen and (max-width:800px) {
     .customer{
         flex-direction: column !important;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
+        margin-top: 2rem;
     }
 
     .testimony{
