@@ -207,20 +207,24 @@ p {
         display:none;
     }
 
-    .header:hover ~ .mobile_menu{
-        display: none !important;
+    .mobile_nav:hover ~ .mobile_menu{
+        display: block;
     }
 }
 
 
 
-.header:hover ~ .mobile_menu{
+.mobile_nav:hover ~ .mobile_menu{
     display: block;
 }
 
 .mobile_menu{
+    position: absolute;
+    top: 11vh;
+    width: 100vw;
     display: none;
     text-align: center;
+    background-color: white;
     /* padding: 1rem; */
 }
 
@@ -231,6 +235,11 @@ p {
 .mobile_menu > div{
     margin-top: 1rem;
     border-bottom: solid black 0.5px;
+}
+
+.mobile_menu > :first-child{
+    padding-top: 1rem;
+    border-top: solid black 0.5px;
 }
 
 .mobile_menu > :last-child{
