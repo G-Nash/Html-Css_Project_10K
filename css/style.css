@@ -1295,7 +1295,7 @@ p {
 @keyframes slide-y {
     from{
         opacity: 0;
-        transform: translateY(500px);
+        transform: translateY(100px);
     }
 
     to{
@@ -1307,7 +1307,7 @@ p {
 @keyframes slide-yy {
     from{
         opacity: 0;
-        transform: translateY(-500px);
+        transform: translateY(-100px);
     }
 
     to{
@@ -1319,7 +1319,7 @@ p {
 @keyframes slide-xl {
     from{
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(-100px);
     }
 
     to{
@@ -1331,7 +1331,7 @@ p {
 @keyframes slide-xr {
     from{
         opacity: 0;
-        transform: translateX(500px);
+        transform: translateX(100px);
     }
 
     to{
