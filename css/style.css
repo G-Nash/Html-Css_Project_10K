@@ -370,6 +370,8 @@ p {
         width: 350px !important;
         border-top: solid lightgray 0.1rem;
         border-left: none !important;
+
+        min-width: 100%;
     }
 }
 
